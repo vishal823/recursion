@@ -1,0 +1,50 @@
+// counting print by head recursion
+#include <bits/stdc++.h>
+using namespace std;
+ void counting(int n){
+  //base case
+  if(n==0){
+     return;
+   }
+   // recursive call
+   counting(n-1);
+    //processing
+   cout<< n <<endl;
+ }
+
+int main() {
+  int n;
+  cin>>n;
+  counting(n);
+  
+  
+}
+
+
+// counting print by tail recursion
+#include <bits/stdc++.h>
+using namespace std;
+ void counting(int n){
+   //base case
+   if(n==0){
+     return;
+   }
+   //processing
+   cout<< n <<endl;
+   // recursive call
+   counting(n-1);
+   
+ }
+
+int main() {
+  int n;
+  cin>>n;
+  counting(n);
+  
+  
+}
+
+
+ when fuction call this way ( base case-> recursive call -> processing is known as head recursion)
+  when fuction call this way ( base case->  processing -> recursive call is known as tail recursion)
+ 
