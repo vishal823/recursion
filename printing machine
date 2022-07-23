@@ -1,0 +1,30 @@
+//A printer printing the pages by recursivly 
+#include <bits/stdc++.h>
+using namespace std;
+void PrinterPrintingPages(int firstpage,int lastpage){
+ cout<< "firstpage is -> "<< firstpage <<" " <<"latspage is->"<<lastpage<<endl; 
+  // base case
+  if(firstpage == lastpage){
+    cout<<"total pages are ->"<< lastpage << endl;
+    return;
+  }
+   // processing
+    firstpage++;
+    
+   // recursive call
+  PrinterPrintingPages( firstpage, lastpage);
+  
+
+  
+}
+
+int main() {
+ int firstpage = 0;
+  int lastpage;
+  cout<<"what's your last page"<<" ->" ;
+  cin>>lastpage;
+  PrinterPrintingPages( firstpage, lastpage);
+    return  0;
+  
+  
+}
