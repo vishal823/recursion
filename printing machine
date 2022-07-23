@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 void PrinterPrintingPages(int firstpage,int lastpage){
- cout<< "firstpage is -> "<< firstpage <<" " <<"latspage is->"<<lastpage<<endl; 
+ cout<< "firstpage is -> "<< firstpage <<" " <<"lastspage is->"<<lastpage<<endl; 
   // base case
   if(firstpage == lastpage){
     cout<<"total pages are ->"<< lastpage << endl;
