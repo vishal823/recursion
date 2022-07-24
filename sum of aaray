@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int getsum(int n,int arr[]){
+
+  //base case
+  if(n==0 ) {
+    return 0;
+   
+  }
+  if(n==1){
+    return arr[0];
+  }
+    int sum = arr[0]+ getsum( n-1, arr+1);
+     return sum;
+  }
+
+
+int main() {
+  int arr[6]={1,3,8,4,5,5};
+  int n = 6;
+  int ans= getsum(n-1,arr+1);
+   cout<< ans<<endl;
+ 
+  
+ 
+  
+}
