@@ -1,0 +1,64 @@
+// by recursion
+#include <iostream>
+using namespace std;
+void convertdigitintowords(int n, string arr[]){
+  if(n==0){
+    return ;
+    }
+  // processing
+  int value = n%10;
+   n = n / 10;
+  
+
+  // recursive relation
+  convertdigitintowords( n,  arr);
+   cout<< arr[value]<<" ";
+}
+
+int main() {
+  string arr[10] = {"zero","one","two","three","four"
+  ,"five","six","seven","eight","nine"};
+
+  int n;
+  cout<<"which number you convert kindly enter it"<<"->"<<" ";
+  cin>>n;
+ 
+  cout<<"congratulation you convert your digit it words "<<"->"<<" ";
+ convertdigitintowords( n,  arr);
+  cout<<endl;
+  
+}
+
+
+
+// but if you want to print your given number reverse in words use this
+// by recursion
+#include <iostream>
+using namespace std;
+void convertdigitintowords(int n, string arr[]){
+  if(n==0){
+    return ;
+    }
+  // processing
+  int value = n%10;
+   n = n / 10;
+   cout<< arr[value]<<" ";
+
+  // recursive relation
+  convertdigitintowords( n,  arr);
+  
+}
+
+int main() {
+  string arr[10] = {"zero","one","two","three","four"
+  ,"five","six","seven","eight","nine"};
+
+  int n;
+  cout<<"which number you convert kindly enter it"<<"->"<<" ";
+  cin>>n;
+ 
+  cout<<"congratulation you convert your digit it words "<<"->"<<" ";
+ convertdigitintowords( n,  arr);
+  cout<<endl;
+  
+}
